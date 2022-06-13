@@ -1,63 +1,7 @@
 <?php
 include './include/header.php';
 ?>
-<style>
-    .allin,.allin2{
-        display:flex;
-        justify-content: center;
-    }
-    .allin{
-        margin-top:5%;
-     }
-    .allin2{
-        margin-bottom: 5%;
-    }
-    fieldset{
-        width: 30%;
-        justify-content: center;
-        display:block;
-    }
-    legend{
-        font-size: 1.5rem;
-        text-align: center;
-        justify-content: center;
-    }
-    #inscription{
-        display: flex;
-        flex-wrap: wrap;
-    }
-    #inscription label,input{
-        width:100%;
-    }
-    label{
-        text-align: center;
-        margin: 1% 0;
-    }
-    input{
-        width: 80%;
-        margin-left:10%;
-    }
-    #connexion{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-        margin: 2% 0;
-    }
-    #submit{
-        width:100%;
-        display: flex;
-        justify-content: center;
-        margin-top:1%;
-    }
-    .adresse{
-        width: 100%;
-    }
-.adresse input{
-    margin-top: 1%;
-}
 
-
-</style>
 <div class="allin">
 <fieldset>
     <legend>Bienvenue</legend>
@@ -82,11 +26,11 @@ include './include/header.php';
         <input type="mail" name="confmail" id="confmail" required><br>
         
         <label for="telephone">Téléphone</label>
-        <input type="tel" name="telephone" id="telephone">
+        <input type="tel" name="telephone" id="telephone" value="0123456789" onFocus="this.value='';">
 
         <label for="adresse">Votre Adresse</label>
         <div class="adresse">
-        <input type="number" name="adresse" id="numero" value="01" onFocus="this.value='';">
+        <input type="text" name="adresse" id="numero" value="10 rue de la république 75000 Paris" onFocus="this.value='';">
 
         </div>
 
@@ -101,9 +45,7 @@ include './include/header.php';
 <div class="allin2">
 <fieldset >
     <legend>Déjà inscrit ? </legend>
-    <div id="connexion">
-        <a href="./view_login.php">Connexion</a>
-    </div>
+        <a id="connexion" href="./view_login.php">Connexion</a>
 </fieldset>
 </div>
 

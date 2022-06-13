@@ -11,7 +11,7 @@ include './php/include/header.php';// include permet d'inclure un fichier
 ?>
 <h1>Votre inscription à bien été prise en compte ! Merci !</h1>
 
-<a href="./php/view_login.php">Retour à l'accueil</a>
+<a href="./view_login.php">Retour à l'accueil</a>
 
 <?php
 include './php/include/footer.php';

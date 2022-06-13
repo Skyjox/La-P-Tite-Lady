@@ -5,7 +5,7 @@ if(empty($_SESSION['nom'])){
 }
 
 
-include "./php/include/header.php";
+include "./include/header.php";
 ?>
     <div id="order">
 
@@ -25,12 +25,12 @@ include "./php/include/header.php";
 
         <a href="./gest_art.php">Gérer les articles</a><br><br>
 
-        <a href="./php/deconnect.php">Déconnexion</a>
+        <a href="./deconnect.php">Déconnexion</a>
 
-        <a href="./php/view_insc.php"> Retour</a>
+        <a href="./view_login.php"> Retour</a>
 
 
     </div>
 <?php
-include "./php/include/footer.php";
+include "./include/footer.php";
 ?>
