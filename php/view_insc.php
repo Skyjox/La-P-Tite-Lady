@@ -2,8 +2,20 @@
 include './include/header.php';
 ?>
 <style>
+    .allin,.allin2{
+        display:flex;
+        justify-content: center;
+    }
+    .allin{
+        margin-top:5%;
+     }
+    .allin2{
+        margin-bottom: 5%;
+    }
     fieldset{
         width: 30%;
+        justify-content: center;
+        display:block;
     }
     legend{
         font-size: 1.5rem;
@@ -21,10 +33,15 @@ include './include/header.php';
         text-align: center;
         margin: 1% 0;
     }
+    input{
+        width: 80%;
+        margin-left:10%;
+    }
     #connexion{
         display: flex;
         width: 100%;
         justify-content: center;
+        margin: 2% 0;
     }
     #submit{
         width:100%;
@@ -41,6 +58,7 @@ include './include/header.php';
 
 
 </style>
+<div class="allin">
 <fieldset>
     <legend>Bienvenue</legend>
 
@@ -79,13 +97,16 @@ include './include/header.php';
 
     </form>
 </fieldset><br><br>
-
-<fieldset>
+</div>
+<div class="allin2">
+<fieldset >
     <legend>Déjà inscrit ? </legend>
     <div id="connexion">
-    <a href="./login.php">Connexion</a>
+        <a href="./view_login.php">Connexion</a>
     </div>
 </fieldset>
+</div>
+
 
 
 <?php

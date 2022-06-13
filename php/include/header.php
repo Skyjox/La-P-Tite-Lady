@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <!--Début link css-->
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <!-- Fin link css -->
     <!--Début polices -->
     <!--Fin polices -->

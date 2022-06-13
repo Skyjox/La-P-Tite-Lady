@@ -51,7 +51,7 @@ exit();
 }
 if(isset($errors)){
 $_SESSION['erreur'] = $errors;
-header('location: ./index_insc.php');
+header('location: ./view_insc.php');
 
 }
 ?>
