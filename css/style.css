@@ -19,7 +19,7 @@ footer ul li{
     list-style-type: none;
 }
 footer a:hover{
-    color:red;
+    color:#ef90b8;
 }
 strong{
     text-decoration: underline;
@@ -39,13 +39,23 @@ strong{
 #infos div h3{
     text-decoration: underline;
 }
+
+hr{
+
+    display: block;
+    width: 80%;
+    align-items: center;
+    margin:5% 10% 1.5% 10%   ;
+}
 em{
     font-size: 0.7rem;
 }
-hr{
-    width: 80%;
-    align-items: center;
-    margin:5% 0 1.5% 0;
+#rs{
+    height: 40px;
 }
+#facebook{
+    padding-bottom: 2%;
+}
+
 
 /* Fin Footer*/
