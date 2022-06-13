@@ -10,6 +10,13 @@ h1{
     font-size: 10rem;
 }
 /*Fin Header*/
+/*Début Navbar*/
+#navbar{
+    display:flex;
+
+
+}
+/*Fin Navbar*/
 /*Début view_insc*/
 
 fieldset{
@@ -45,7 +52,6 @@ input{
 .adresse input{
     margin-top: 1%;
 }
-
 
 /*Fin view_insc*/
 /*Début view_login*/

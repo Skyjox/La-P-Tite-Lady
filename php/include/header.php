@@ -20,4 +20,15 @@
 </head>
 <body>
 <h1>La P'tite Lady</h1>
+<Div id="navbar">
+    <ul>
+        <li>Home</li>
+        <li>Catalogue</li>
+        <li>Vétements</li><!-- faire le menu déroulant en js -->
+        <li>Bijoux</li><!-- faire le menu déroulant en js -->
+        <li>Accessoires</li><!-- faire le menu déroulant en js -->
+        <li>Maroquinerie</li><!-- faire le menu déroulant en js -->
+        <li>Chaussures</li>
+    </ul>
+</Div>
 
