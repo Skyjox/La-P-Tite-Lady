@@ -25,7 +25,7 @@ else{// sinon on fait
             session_start();
             $_SESSION['nom'] = $_POST['nom'];
             $_SESSION['user_kind'] = $result['user_kind'];
-            exit(header('location: ./view_member.php'));
+            exit(header('location: ./view_dashboard.php'));
 
 
         }else{

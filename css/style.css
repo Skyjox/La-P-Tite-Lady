@@ -103,17 +103,14 @@ legend{
     justify-content: center;
     color: #3d4246;
 }
-#inscription{
+form{
     display: flex;
     flex-wrap: wrap;
 }
-#inscription label,input{
+#form label,input{
     width:100%;
 }
-label{
-    text-align: center;
-    margin: 1% 0;
-}
+
 input{
     width: 80%;
     margin-left:10%;
@@ -177,9 +174,66 @@ input{
 }
 #connexion:hover{
    color:#ef90b8;
-
 }
 /*Fin view_login*/
+/*Début view_dashboard*/
+.cssp{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    height:50px;
+    align-items: center;
+    font-size: 2rem;
+    margin-top:2%;
+    color:#3d4246;
+}
+.allog1{
+    display:flex;
+    justify-content: center;
+    margin:2% 0;
+
+}
+.cssa1{
+    margin-top:1%;
+}
+.cssa,.cssa1{
+    width:100%;
+    display:flex;
+    margin:3% 0;
+}
+.a{
+    text-decoration:none;
+    color:#3d4246;
+    width:100%;
+    text-align: center;
+}
+/*Fin view_dashboard*/
+/*Début view_admin*/
+.admin{
+    display:flex;
+    width: 100%;
+}
+.article,.membres{
+    width: 50%;
+    margin:2%
+}
+.gestarticle,.gestmembre{
+    width:100%;
+    height: 500px;
+}
+table{
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+}
+table a{
+    color: #3d4246;
+    width: 20%;
+}
+table a:hover{
+    color:#ef90b8;
+}
+/*Fin view_admin*/
 /* Début Footer*/
 footer p{
     font-size:110%;
@@ -230,6 +284,12 @@ em{
 #facebook{
     padding-bottom: 2%;
 }
-
-
 /* Fin Footer*/
+/*Button*/
+button{
+    background-color:white;
+    border:none;
+}
+button:hover{
+    box-shadow: 2px 2px 2px black;
+}
