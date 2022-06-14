@@ -19,16 +19,35 @@
     <title>La P'tite Lady</title>
 </head>
 <body>
-<h1>La P'tite Lady</h1>
-<Div id="navbar">
-    <ul>
-        <li>Home</li>
-        <li>Catalogue</li>
-        <li>Vétements</li><!-- faire le menu déroulant en js -->
-        <li>Bijoux</li><!-- faire le menu déroulant en js -->
-        <li>Accessoires</li><!-- faire le menu déroulant en js -->
-        <li>Maroquinerie</li><!-- faire le menu déroulant en js -->
-        <li>Chaussures</li>
-    </ul>
-</Div>
+<div class="livraison">
+    <h4>Livraison offerte à partir de 90€</h4>
+</div>
+    <div id="allheader">
+
+    <div id="photo">
+        <img src="../asset/img/header.jpg" alt="boutique" id="boutique">
+    </div>
+    <div id="boxheader">
+        <h1>La P tite Lady</h1>
+    </div>
+        <div id="allico">
+            <ul id="icones">
+                <li><a href="./home.php"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="./view_login.php"><i class="fa-solid fa-user "></i></a></li>
+                <li><a href="#"><i class="fa-solid fa-bag-shopping "></i></a></li>
+            </ul>
+        </div>
+        <hr>
+    <div id="navbar">
+        <ul id="nav">
+            <li>Home</li>
+            <li>Catalogue</li>
+            <li>Vétements</li><!-- faire le menu déroulant en js -->
+            <li>Bijoux</li><!-- faire le menu déroulant en js -->
+            <li>Accessoires</li><!-- faire le menu déroulant en js -->
+            <li>Maroquinerie</li><!-- faire le menu déroulant en js -->
+            <li>Chaussures</li>
+        </ul>
+    </div>
+</div>
 
