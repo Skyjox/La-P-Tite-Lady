@@ -13,7 +13,7 @@ include "./include/header.php";
         <label for="password">Mot de passe</label><br>
         <input type="password" name="password" id="password">
         <div id="submit">
-        <button type="submit" name="submit">Envoyer</button>
+        <button class="boutton" type="submit" name="submit">Envoyer</button>
         </div>
     </form>
 </fieldset>

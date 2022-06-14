@@ -2,7 +2,7 @@
 include './include/header.php';
 ?>
 
-<div class="allin">
+<div class="allog">
 <fieldset>
     <legend>Bienvenue</legend>
 
@@ -42,7 +42,7 @@ include './include/header.php';
     </form>
 </fieldset><br><br>
 </div>
-<div class="allin2">
+<div class="allog2">
 <fieldset >
     <legend>Déjà inscrit ? </legend>
         <a id="connexion" href="./view_login.php">Connexion</a>

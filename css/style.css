@@ -128,28 +128,25 @@ input{
 }
 
 /*Fin view_insc*/
+/*Début Confirmation*/
+.confirm{
+    text-align: center;
+    color:#3d4246;
+}
+/*Fin confirmation*/
 /*Début view_login*/
-.allog,.allog2,.allin,.allin2{
+.allog,.allog2{
     display:flex;
     justify-content: center;
 }
-.allog,.allin{
+.allog{
     margin:5% 0 2.5% 0;
 
 }
-.allog2,.allin2{
+.allog2{
     margin-bottom: 5%;
 }
-fieldset{
-    width: 30%;
-    justify-content: center;
-    display:block;
-}
-legend{
-    font-size: 1.5rem;
-    text-align: center;
-    justify-content: center;
-}
+
 #login{
     display: flex;
     flex-wrap: wrap;
@@ -187,9 +184,7 @@ input{
 footer p{
     font-size:110%;
 }
-footer h3{
 
-}
 footer a{
     text-decoration:none;
     color: #3d4246;

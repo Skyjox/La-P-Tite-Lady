@@ -40,7 +40,6 @@
         <hr>
     <div id="navbar">
         <ul id="nav">
-            <li>Home</li>
             <li>Catalogue</li>
             <li>Vétements</li><!-- faire le menu déroulant en js -->
             <li>Bijoux</li><!-- faire le menu déroulant en js -->

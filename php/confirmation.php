@@ -1,4 +1,4 @@
-/* code de confirmation quand l'inscription c'est déroulée correctement */
+<!--code de confirmation quand l'inscription c'est déroulée correctement -->
 <?php
 session_start();
 if(isset($_SESSION['prenom'])){//isset vérifie si la variable à bien été déclarée et n'est pas NULL
@@ -7,12 +7,21 @@ if(isset($_SESSION['prenom'])){//isset vérifie si la variable à bien été dé
 ?>
 
 <?php
-include './php/include/header.php';// include permet d'inclure un fichier
+include './include/header.php';// include permet d'inclure un fichier
 ?>
-<h1>Votre inscription à bien été prise en compte ! Merci !</h1>
-
-<a href="./view_login.php">Retour à l'accueil</a>
+<div class="allog">
+<fieldset>
+    <legend>Félicitation !</legend>
+    <br>
+        <h3 class="confirm">Votre inscription à bien été prise en compte ! Merci !</h3><br>
+</fieldset>
+</div>
+<div class="allog2">
+<fieldset>
+    <a id="connexion" href="./view_login.php">Revenir à mon compte</a>
+</fieldset>
+</div>
 
 <?php
-include './php/include/footer.php';
+include './include/footer.php';
 ?>
