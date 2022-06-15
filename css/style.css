@@ -272,6 +272,12 @@ table a:hover{
     margin:2% 0 2% 2%;
 }
 /*Fin view_admin*/
+/*Début view_membre*/
+.comment{
+    width:50%;
+
+}
+/*Fin view_membre*/
 /* Début Footer*/
 footer p{
     font-size:110%;

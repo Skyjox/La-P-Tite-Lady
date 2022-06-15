@@ -23,13 +23,23 @@ include "./include/header_connect.php";
                     echo"<a href='./update_art.php?id=$data->id'> Modifier </a>";
                     echo "</td>";
                     echo "<td>";
-                    echo "<a href='./delete_db.php?id=$data->id'>Supprimer</a>";
+                    if($_POST['user_kind']==1){echo '<a href="./delete.php?=$data->id">Supprimer</a>';}
                     echo "</td></tr>";
                 }
                 ?>
             </table>
         </fieldset>
     </div>
+
+    <div class="article">
+        <fieldset class="gestmembre">
+            <legend>Ajouter un commentaire, un avis</legend>
+
+            <label for="avis"></label>
+            <input type="text" name="avis">
+        </fieldset>
+    </div>
+</div>
     <div class="back">
         <a href="./view_dashboard.php"><button>Retour</button></a>
     </div>
