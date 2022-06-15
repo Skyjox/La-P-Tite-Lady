@@ -34,9 +34,17 @@ include "./include/header_connect.php";
     <div class="article">
         <fieldset class="gestmembre">
             <legend>Ajouter un commentaire, un avis</legend>
+            <form class="formentaire" action="./submit_commentaire.php" method="POST">
 
-            <label for="avis"></label>
-            <input type="text" name="avis">
+                <textarea name="commentaire" id="commentaire" placeholder="Laisser commentaire ici, celui-ci peut ce faire sur le site, un article où tout autre choses ! (Attention les commentaires injurieux où vulgaires seront supprimé sans avertissement)" onFocus="this.placeholder='';"></textarea>
+                <div id="submit">
+                    <button class="boutton" type="submit" name="submit">Soumettre mon commentaire</button>
+                </div>
+
+            </form>
+
+
+
         </fieldset>
     </div>
 </div>

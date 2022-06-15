@@ -273,10 +273,17 @@ table a:hover{
 }
 /*Fin view_admin*/
 /*Début view_membre*/
-.comment{
-    width:50%;
-
+.formentaire{
+    display: flex;
+    justify-content: center;
 }
+
+#commentaire{
+    margin-top:2%;
+    width: 80%;
+    height:400px;
+}
+.
 /*Fin view_membre*/
 /* Début Footer*/
 footer p{

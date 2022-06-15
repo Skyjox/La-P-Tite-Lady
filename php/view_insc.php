@@ -26,11 +26,11 @@ include './include/header.php';
         <input type="mail" name="confmail" id="confmail" required><br>
         
         <label for="telephone">Téléphone</label>
-        <input type="tel" name="telephone" id="telephone" value="0123456789" onFocus="this.value='';">
+        <input type="tel" name="telephone" id="telephone" placeholder="0123456789" onFocus="this.placeholder='';">
 
         <label for="adresse">Votre Adresse</label>
         <div class="adresse">
-        <input type="text" name="adresse" id="numero" value="10 rue de la république 75000 Paris" onFocus="this.value='';">
+        <input type="text" name="adresse" id="numero" placeholder="10 rue de la république 75000 Paris" onFocus="this.placeholder='';">
 
         </div>
 

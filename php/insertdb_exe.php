@@ -13,9 +13,9 @@ if (!empty($_POST)) {
     if (empty($_POST['prix'])) {
         echo 'faux3';
     } else {
-        $titre = valid_donnees($_POST['classe']);
-        $auteur = valid_donnees($_POST['taille']);
-        $annee = valid_donnees($_POST['prix']);
+        $classe = valid_donnees($_POST['classe']);
+        $taille = valid_donnees($_POST['taille']);
+        $prix = valid_donnees($_POST['prix']);
 
         require "./connection.php";
         $req = $pdo->prepare("INSERT INTO articles SET classe= ?, taille = ?, prix = ?");
