@@ -12,7 +12,7 @@ if(!empty($_POST)){
 }
 ?>
 <?php
-include "./include/header.php";
+include "./include/header_connect.php";
 ?>
 <div class="allog">
 <fieldset >

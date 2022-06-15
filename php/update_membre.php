@@ -16,15 +16,11 @@ if(!empty($_POST)){
 }
 ?>
 <?php
-if($_POST['password'] !== $_POST['compassword']){echo 'Les mots de passe de correspondent pas ';}else{
-    echo 'Modification enregistrée';
-}
-if($_POST['mail'] !== $_POST['commail']){ echo 'les adresses e-mails sont différentes';}else{
-    echo 'Modification enregistrée';
-}
+if($_POST['password'] !== $_POST['compassword']){echo 'Les mots de passe de correspondent pas ';}
+if($_POST['mail'] !== $_POST['commail']){ echo 'les adresses e-mails sont différentes';}
 ?>
 <?php
-include "./include/header.php";
+include "./include/header_connect.php";
 ?>
 <div class="allog">
     <fieldset >
@@ -66,8 +62,12 @@ include "./include/header.php";
 
 </div>
 <div class="back">
-    <a href="./view_admin.php"><button>Retour</button></a>
+<?php
+ if($_POST['user_kind'] ==1 ){echo '<a href="./view_admin.php"><button>Retour</button></a>';}
+ else{ echo'<a href="./view_dashboard.php"><button>Retour</button></a>';}
+    ?>
 </div>
+
 <?php
 include "./include/footer.php";
 ?>

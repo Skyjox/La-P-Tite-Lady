@@ -3,7 +3,7 @@ session_start();
 if(empty($_SESSION['nom'])){
     header('location: ./login/php');
 }
-include "./include/header.php";
+include "./include/header_connect.php";
 ?>
 <div class="admin">
     <div class="article">

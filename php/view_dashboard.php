@@ -5,7 +5,7 @@ if(empty($_SESSION['nom'])){
 }
 
 
-include "./include/header.php";
+include "./include/header_connect.php";
 ?>
         <div class="cssp">
              <p >
@@ -21,12 +21,13 @@ include "./include/header.php";
         <div class="cssa1">
             <?php if($_SESSION['user_kind'] == 1){
             echo "<a class='a' href='./view_admin.php'> Gérer les membres et les articles </a><br><br>";
-            }
+            }else{ echo "<a class='a' href='./view_membre.php'> Voir mes articles </a><br><br>";}
         ?>
         </div>
         <div class="cssa">
-            <a class='a' href="./view_membre.php">Gérer les articles</a><br><br>
+            <a class="a" href="./update_membre.php">Modifier mon profil</a>
         </div>
+        <br>
         <div class="cssa">
             <a class='a' href="./deconnect.php">Déconnexion</a><br><br>
         </div>
