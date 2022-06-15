@@ -89,8 +89,32 @@ h1{
 
 }
 /*Fin Navbar*/
+/*Début home*/
+.general{
+    width:80%;
+    margin: 2% 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    width:50%;
+}
+.desc{
+    width:50%;
+    justify-content: center;
+}
+.desc h2{
+    padding-left:10%;
+}
+.desc p{
+    font-size:1.2rem;
+    width:75%;
+    padding-left:10%;
+    color:  #3d4246;
+}
+/*Fin home*/
 /*Début view_insc*/
-
 fieldset{
     width: 30%;
     justify-content: center;
@@ -222,6 +246,7 @@ input{
     height: 500px;
 }
 table{
+    margin-top: 2%;
     width: 100%;
     text-align: center;
     line-height: 30px;
@@ -232,6 +257,15 @@ table a{
 }
 table a:hover{
     color:#ef90b8;
+}
+.add{
+    text-decoration: none;
+    color:#3d4246;
+}
+#add{
+    background-color:white;
+    border:none;
+    margin:2% 0 2% 2%;
 }
 /*Fin view_admin*/
 /* Début Footer*/
@@ -289,7 +323,20 @@ em{
 button{
     background-color:white;
     border:none;
+    text-decoration: underline;
 }
 button:hover{
-    box-shadow: 2px 2px 2px black;
+    box-shadow: 2px 2px 2px #ef90b8;
+}
+.back{
+    width:100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
+}
+.back1{
+    width:50%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1%;
 }

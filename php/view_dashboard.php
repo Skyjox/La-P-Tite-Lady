@@ -10,7 +10,7 @@ include "./include/header.php";
         <div class="cssp">
              <p >
                 Bonjour <?=$_SESSION['nom']?>,<!--intégration de la variable $_SESSION pour personnaliser le texte bonjour -->
-                <?php if($_SESSION['user_kind'] == 1){echo " Vous êtes connecté en administrateur";}?>
+                <?php if($_SESSION['user_kind'] == 1){echo " Vous êtes connecté en administrateur.";}?>
             </p>
         </div>
 
