@@ -21,6 +21,7 @@ include "./include/header_connect.php";
         <div class="cssa1">
             <?php if($_SESSION['user_kind'] == 1){
             echo "<a class='a' href='./view_admin.php'> Gérer les membres et les articles </a><br><br>";
+            echo " <br>";
             echo "<a class='a' href='./view_admin_commentaire.php'>Modérer les commentaires</a>";
             }else{ echo "<a class='a' href='./view_membre.php'> Voir mes articles où laisser un avis</a><br><br>";}
         ?>
@@ -33,7 +34,7 @@ include "./include/header_connect.php";
             <a class='a' href="./deconnect.php">Déconnexion</a><br><br>
         </div>
         <div class="cssa">
-            <a class='a' href="home.php"> Retour</a>
+            <a class='a' href="index.php"> Retour</a>
         </div>
 
     </fieldset>

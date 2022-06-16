@@ -2,6 +2,10 @@
 session_start();
 if(empty($_SESSION['nom'])){
     header('location: ./login/php');
+}else{
+    if($_SESSION['user_kind']){
+        header('location: ./login.php');
+    }
 }
 include "./include/header_connect.php";
 ?>
