@@ -34,7 +34,7 @@ include "./include/header_connect.php";
             <a class='a' href="./deconnect.php">Déconnexion</a><br><br>
         </div>
         <div class="cssa">
-            <a class='a' href="index.php"> Retour</a>
+            <a class='a' href="home.php"> Retour</a>
         </div>
 
     </fieldset>
