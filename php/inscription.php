@@ -41,10 +41,13 @@ if(!isset($_POST['user_kind'])){
 }
 
 
+
 $req = $pdo->prepare("INSERT INTO user SET nom = ?, prenom = ?, password = ?, mail = ?, adresse = ?, telephone = ?, user_kind= ?");
+
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT);//
 $req->execute([$_POST['nom'], $_POST['prenom'], $password, $_POST['mail'], $_POST['adresse'], $_POST['telephone'], $_POST['user_kind']]);
 header('location: ./confirmation.php');
+
 
 exit();
 }

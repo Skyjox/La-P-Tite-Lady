@@ -236,6 +236,25 @@ input{
     color:#ef90b8;
 }
 /*Fin view_dashboard*/
+/*Début view_admin_commentaires*/
+.avis,.nom,.times,.action{
+    border:1px solid #3d4246;
+}
+.nom{
+    width:10%;
+}
+.times{
+    width: 10%;
+}
+.avis{
+    width: 70%;
+}
+.dcom{
+    width: 5%;
+    border: 1px solid #3d4246;
+}
+/*Fin view_admin_commentaies*/
+
 /*Début view_admin*/
 .admin{
     display:flex;

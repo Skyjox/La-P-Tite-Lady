@@ -9,22 +9,29 @@ if(empty($_SESSION['nom'])){
 }
 include './include/header_connect.php';
 ?>
-<div>
-    <fieldset>
-        <legend>Listes des commentaires</legend>
-        <tr> <th>Nom</th> <th>commentaire</th> <th>date et heure</th></tr>
+<div class="allog">
+    <fieldset class="gestarticle">
+        <legend class="titre">Listes des commentaires</legend>
+        <table class="vac">
+        <tr> <th class="nom">Nom</th> <th class="avis">commentaire</th> <th class="times">date et heure</th><th class="action">Action</th></tr>
         <?php
+
         require './connection.php';
-        $req=$pdo->query("SELECT * FROM commentaire INNER JOIN user ON user.nom = commentaire.commentaire");
+        $req=$pdo->query("SELECT * FROM commentaire  ");
+        $req->execute();
+
         while($data=$req->fetch()){
-            echo '<tr> <td>$data->nom</td> <td>$data->commentaire</td> <td>$data->timestamp</td>';
-            echo '<td>';
-            echo '<a href="$da"'
+            echo '<tr> <td class="nom">'. $data->userid .'</td> <td class="avis">'. $data->commentaire.'</td> <td class="times">'. $data->timestamp .'</td>';
+            echo "<td class='dcom'>";
+            echo "<a  href='./delete_db.php?id=$data->id'>Supprimer</a>";
+            echo '</td></tr>';
         }
         ?>
-
-
+        </table>
     </fieldset>
+</div>
+<div class="back">
+    <a href="./view_dashboard.php"><button>Retour</button></a>
 </div>
 
 
