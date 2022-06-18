@@ -13,7 +13,7 @@ include './include/header_connect.php';
         <input type="text" name="taille" id="taille" required>
 
         <label for="prix">Prix</label>
-        <input type="number" name="prix" id="prix" required>
+        <input type="number" step="any" name="prix" id="prix" required>
 
         <div id="submit">
             <button type="submit">Ajouter l'article</button>

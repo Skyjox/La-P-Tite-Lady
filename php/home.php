@@ -3,7 +3,27 @@ include './include/header.php';
 ?>
 <!--Ajouter le carrousel à faire en jquery voir si on peut combiner avec l'effet JS d'accueil du TP2 -->
 
-<div class="general">
+<div class="part1">
+    <div class="carrousel">
+        <card>
+            <card class="image">
+
+            </card>
+            <card class="text">
+
+            </card>
+
+        </card>
+
+    </div>
+    <div class="carroucom">
+
+        <card class="homecom">
+
+        </card>
+    </div>
+</div>
+<div class="part2">
     <div class="logo">
         <img src="../asset/img/logo.jpg" alt="logo">
     </div>

@@ -3,7 +3,7 @@ session_start();
 if(empty($_SESSION['nom'])){
     header('location: ./login/php');
 }else{
-    if($_SESSION['user_kind']){
+    if($_SESSION['user_kind'] !=1){
         header('location: ./login.php');
     }
 }
@@ -26,10 +26,11 @@ include "./include/header_connect.php";
             echo"<a href='./update_art.php?id=$data->id'> Modifier </a>";
             echo "</td>";
             echo "<td>";
-            echo "<a href='./delete_db.php?id=$data->id'>Supprimer</a>";
+            echo "<a href='./delete_art.php?id=$data->id'>Supprimer</a>";
             echo "</td></tr>";
         }
         ?>
+
     </table>
     </fieldset>
         </div>

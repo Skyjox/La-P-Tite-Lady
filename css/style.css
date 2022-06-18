@@ -73,6 +73,15 @@ h1{
     color: blanchedalmond;
     text-shadow: 5px 5px 5px black;
 }
+#disconnect{
+    font-size: 0.7em;
+    position:absolute;
+    left:51%;
+    top: 44.1%;
+    background-color: #ef90b8;
+    color:#3d4246;
+    font-weight:bold;
+}
 
 /*Fin Header*/
 /*Début Navbar*/
@@ -91,7 +100,55 @@ h1{
 }
 /*Fin Navbar*/
 /*Début home*/
-.general{
+.part1{
+    width:80%;
+    margin:2% 10%;
+    display:flex;
+}
+.carrousel{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height:500px;
+    background-color:#3d4246;
+}
+card{
+    background-color:#ef90b8;
+    height: 450px;
+    width: 85%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+.image{
+    width:80%;
+    height:65%;
+    background-color:deepskyblue;
+}
+.text{
+    width:80%;
+    height:35%;
+    background-color: greenyellow;
+}
+.carroucom{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    height:500px;
+}
+.homecom{
+    width:60%;
+    height: 60%;
+    background-color:white;
+    border:2px wave #ef90b8;
+}
+
+
+.part2{
     width:80%;
     margin: 2% 10%;
     display: flex;

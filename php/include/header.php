@@ -34,6 +34,7 @@
             <ul id="icones">
                 <li><a href="./home.php"><i class="fa-solid fa-house"></i></a></li>
                 <li><a href="./view_login.php"><i class="fa-solid fa-user "></i></a></li>
+
                 <li><a href="#"><i class="fa-solid fa-bag-shopping "></i></a></li>
             </ul>
         </div>
