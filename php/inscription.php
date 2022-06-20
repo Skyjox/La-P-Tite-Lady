@@ -46,7 +46,7 @@ $req = $pdo->prepare("INSERT INTO user SET nom = ?, prenom = ?, password = ?, ma
 
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT);//
 $req->execute([$_POST['nom'], $_POST['prenom'], $password, $_POST['mail'], $_POST['adresse'], $_POST['telephone'], $_POST['user_kind']]);
-header('location: ./confirmation.php');
+header('location: ./view_confirmation.php');
 
 
 exit();
@@ -54,6 +54,7 @@ exit();
 }
 if(isset($errors)){
 $_SESSION['erreur'] = $errors;
+echo 'Erreur';
 header('location: ./view_insc.php');
 
 }

@@ -1,4 +1,4 @@
-<!--code de confirmation quand l'inscription c'est déroulée correctement -->
+<!--code de confirmation quand l'inscription, c'est déroulée correctement -->
 <?php
 session_start();
 if(isset($_SESSION['prenom'])){//isset vérifie si la variable à bien été déclarée et n'est pas NULL

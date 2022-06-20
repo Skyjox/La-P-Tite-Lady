@@ -7,7 +7,7 @@ if(isset($_POST["submit"])) if(empty($_POST['nom']) || empty($_POST['password'])
 
 else{// sinon on fait
 
-    $query ="SELECT * FROM user WHERE nom = :nom LIMIT 1"; // déclaration variable $query avec du MySQL
+    $query = ("SELECT * FROM user WHERE nom = :nom LIMIT 1"); // déclaration variable $query avec du MySQL
     $statement = $pdo->prepare($query);//pdo = PHP Data Object
     // déclaration de la variable $statement
 
