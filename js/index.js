@@ -1,7 +1,8 @@
-var demo = new Vue({
-    el:'#demo',
+var deco = new Vue({
+    el:'#deco',
     data:{
-        disconnect: false
+        disconnect: false,
+        connect:false
     }
 
 });
