@@ -8,7 +8,11 @@ if(!empty($_POST)){
     require './connection.php';
     $req=$pdo->prepare("UPDATE articles SET classe = ?, taille = ?, prix=? WHERE id = ?");
     $req->execute(array($classe, $taille, $prix, $id));
+    if($_SESSION['user_kind'] ==1){
     header ('location: ./view_admin.php');
+    } else{
+        header('location: ./view_membre.php');
+    }
 }
 ?>
 <?php
@@ -26,7 +30,7 @@ include "./include/header_connect.php";
         <input type="text" name="taille">
 
         <label for="prix">Nouveau Prix</label>
-        <input type="number" name="prix">
+        <input type="number" step="any" name="prix">
 
         <div id="submit">
             <button class="boutton" type="submit" name="submit">Envoyer</button>
@@ -36,7 +40,13 @@ include "./include/header_connect.php";
 
 </div>
 <div class="back">
-    <a href="./view_admin.php"><button>Retour</button></a>
+    <?php
+    if($_SESSION['user_kind']==1){
+   echo '<a href="./view_admin.php"><button>Retour</button></a>';}
+    else{
+        echo '<a href="./view_membre.php"><button>Retour</button></a>';
+    }
+     ?>
 </div>
 <?php
 include "./include/footer.php";

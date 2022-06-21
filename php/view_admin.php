@@ -23,7 +23,7 @@ include "./include/header_connect.php";
 
             echo "<tr> <td>$data->classe</td><td>$data->taille</td><td>$data->prix €</td>";
             echo"<td>";
-            echo"<a href='./update_art.php?id=$data->id'> Modifier </a>";
+            echo"<a href='./view_update_art.php?id=$data->id'> Modifier </a>";
             echo "</td>";
             echo "<td>";
             echo "<a href='./delete_art.php?id=$data->id'>Supprimer</a>";
@@ -45,7 +45,7 @@ include "./include/header_connect.php";
                     while($data= $req->fetch()){
                         echo "<tr><td>$data->nom</td> <td>$data->prenom</td> <td>$data->mail</td>";
                         echo "<td>";
-                        echo "<a href='./update_membre.php?id=$data->id'>Modifier </a>";
+                        echo "<a href='./view_update_membre.php?id=$data->id'>Modifier </a>";
                         echo "</td>";
                         echo "<td>";
                         echo "<a href='./delete_membre.php?id=$data->id'>Supprimer</a>";

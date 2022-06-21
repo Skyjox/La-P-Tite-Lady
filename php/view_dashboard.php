@@ -27,7 +27,7 @@ include "./include/header_connect.php";
         ?>
         </div>
         <div class="cssa">
-            <a class="a" href="view_update_membre.php">Modifier mon profil</a>
+            <a class="a" href="./view_update_membre.php">Modifier mon profil</a>
         </div>
         <br>
         <div class="cssa">

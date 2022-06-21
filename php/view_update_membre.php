@@ -12,7 +12,10 @@ if(!empty($_POST)){
     $req=$pdo->prepare("UPDATE user SET nom = ?, prenom = ?, password =?, mail= ?, adresse=?, telephone=? WHERE id = ?");
     $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
     $req->execute(array($nom, $prenom, $password, $mail, $adresse, $telephone, $id));
-    header ('location: ./view_admin.php');
+    if($_SESSION['user_kind'] ==1){
+    header ('location: ./view_admin.php');}else{
+        header('location: ./view_membre.php');
+    }
 }
 ?>
 <?php

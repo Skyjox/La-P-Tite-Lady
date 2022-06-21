@@ -20,7 +20,7 @@ include "./include/header_connect.php";
 
                     echo "<tr> <td>$data->classe</td><td>$data->taille</td><td>$data->prix €</td>";
                     echo"<td>";
-                    echo"<a href='./update_art.php?id=$data->id'> Modifier </a>";
+                    echo"<a href='./view_update_art.php?id=$data->id'> Modifier </a>";
                     echo "</td>";
                     echo "<td>";
                     if($_POST['user_kind']==1){echo '<a href="./delete.php?=$data->id">Supprimer</a>';}
