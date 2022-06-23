@@ -23,7 +23,7 @@ include "./include/header_connect.php";
                     echo"<a href='./view_update_art.php?id=$data->id'> Modifier </a>";
                     echo "</td>";
                     echo "<td>";
-                    if($_POST['user_kind']==1){echo '<a href="./delete.php?=$data->id">Supprimer</a>';}
+                    if($_POST['user_kind']==1){echo '<a href="./delete_art.php?=$data->id">Supprimer</a>';}
                     echo "</td></tr>";
                 }
                 ?>
@@ -51,3 +51,6 @@ include "./include/header_connect.php";
     <div class="back">
         <a href="./view_dashboard.php"><button>Retour</button></a>
     </div>
+<?php
+include './include/footer.php';
+?>

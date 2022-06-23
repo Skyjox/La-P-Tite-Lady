@@ -13,7 +13,7 @@ include './include/header_connect.php';
     <fieldset class="tablecommentaire">
         <legend class="titre">Listes des commentaires</legend>
         <table class="vac">
-        <tr> <th class="nom">Nom</th> <th class="avis">commentaire</th> <th class="times">date et heure</th><th class="action">Action</th></tr>
+        <tr> <th class="nom">Nom</th> <th class="avis">Commentaire</th> <th class="times">date et heure</th><th class="action">Action</th></tr>
         <?php
 
         require './connection.php';
@@ -33,13 +33,6 @@ include './include/header_connect.php';
 <div class="back">
     <a href="./view_dashboard.php"><button>Retour</button></a>
 </div>
-
-
-
-
-
-
-
 
 <?php
 include './include/footer.php';

@@ -2,7 +2,7 @@
 
 include './secure.php';
 
-if (!empty($_POST)) {
+if (!empty($_POST)) {//Au click sur envoyer verifie les conditions qui suivent //
     $errors = array();
     if (empty($_POST['classe'])) {
         echo 'faux 1';
