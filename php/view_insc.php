@@ -7,32 +7,32 @@ include './include/header.php';
     <legend>Bienvenue</legend>
 
     <form action="./inscription.php" method="POST" id="inscription">
-        <label for="nom">Nom</label><br>
-        <input type="text" name="nom" id="nom" required><br>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" required>
 
-        <label for="prenom">Prenom</label><br>
-        <input type="text" name="prenom" id="prenom" required><br>
+        <label for="prenom">Prenom</label>
+        <input type="text" name="prenom" id="prenom" required>
 
-        <label for="password">Mot de passe</label><br>
-        <input type="password" name="password" id="mdp" required><br>
+        <label for="password">Mot de passe</label>
+        <input type="password" name="password" id="mdp" required>
 
-        <label for="compassword">Confirmer votre mot de passe</label><br>
-        <input type="password" name="compassword" id="comp" required><br>
+        <label for="compassword">Confirmer votre mot de passe</label>
+        <input type="password" name="compassword" id="comp" required>
 
-        <label for="mail">e-mail</label><br>
-        <input type="email" name="mail" id="mail" required><br>
+        <label for="mail">e-mail</label>
+        <input type="email" name="mail" id="mail" required>
 
-        <label for="confmail">Confirmer votre e-mail</label><br>
-        <input type="mail" name="confmail" id="confmail" required><br>
+        <label for="confmail">Confirmer votre e-mail</label>
+        <input type="mail" name="confmail" id="confmail" required>
         
         <label for="telephone">Téléphone</label>
         <input type="tel" name="telephone" id="telephone" placeholder="0123456789" onFocus="this.placeholder='';">
 
         <label for="adresse">Votre Adresse</label>
-        <div class="adresse">
+
         <input type="text" name="adresse" id="numero" placeholder="10 rue de la république 75000 Paris" onFocus="this.placeholder='';">
 
-        </div>
+
 
         
         <div id="submit">

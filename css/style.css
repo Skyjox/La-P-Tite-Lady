@@ -199,12 +199,7 @@ input{
 }
 
 
-.adresse{
-    width: 100%;
-}
-.adresse input{
-    margin-top: 1%;
-}
+
 
 /*Fin view_insc*/
 /*Début Confirmation*/
@@ -445,24 +440,12 @@ button:hover{
 .update{
 
 }
-/*Media queries*/
-@media screen and (max-width: 2560px){
+/*Media queries*/@media screen  and (max-width: 426px)  {
     h1{
-        font-size: 5rem;
+        font-size: 4rem;
     }
     #boutique{
-        height:200px;
-    }
-    .part2{
-        width:100%;
-        display: flex;
-        flex-direction: column;‡
-    }
-    img{
-        width:50%;
-    }
-    .desc{
-        width: 100%;
+        height: 200px;
     }
     fieldset{
         width:75%;
@@ -473,42 +456,21 @@ button:hover{
         top: 30.8%;
         left:52.5%;
     }
-    #login{
-        justify-content: center;
+    form{
+        width:100%;
     }
-
     input{
-        width:59%;
-        margin:0;
-    }
-    .admin{
-        flex-direction: column;
-    }
-    .article{
-        width: 98%;
-        margin: 2% 1%;
-    }
-    #commentaire{
-        width:90%;
-        height: 150px;
-        padding: 1%;
-    }
+        width:49%;
+        margin:1.5% 20%;
 
-    .membres{
-        width:98%;
-        margin: 0 1% 2% 1%;
     }
-    .formentaire{
-        margin-top:15px;
-    }
+    #infos{
+        display: flex;
 
-}
-@media screen and (max-width: 1440px){
-    h1{
-        font-size: 5rem;
+        width: 100%;
     }
-    #boutique{
-        height:200px;
+    #contact,#livraison,#paiement,#customer,#retour{
+        width: 48%;
     }
     .part2{
         width:100%;
@@ -521,99 +483,22 @@ button:hover{
     .desc{
         width: 100%;
     }
-    fieldset{
-        width:75%;
-        padding:0;
-    }
-    #disconnect{
-        position: absolute;
-        top: 30.8%;
-        left:52.5%;
-    }
-    #login{
-        justify-content: center;
-    }
-
-    input{
-        width:59%;
-        margin:0;
-    }
     .admin{
         flex-direction: column;
     }
     .article{
-        width: 98%;
-        margin: 2% 1%;
+        width: 95%;
     }
     #commentaire{
         width:90%;
         height: 150px;
-        padding: 1%;
-    }
-
-    .membres{
-        width:98%;
-        margin: 0 1% 2% 1%;
+        padding-bottom: 3%;
     }
     .formentaire{
         margin-top:15px;
     }
-
-}
-@media screen and (max-width: 1024px){
-    h1{
-        font-size: 5rem;
-    }
-    #boutique{
-        height:200px;
-    }
-    .part2{
-        width:100%;
-        display: flex;
-        flex-direction: column;
-    }
-    img{
-        width:50%;
-    }
-    .desc{
-        width: 100%;
-    }
-    fieldset{
-        width:75%;
-        padding:0;
-    }
-    #disconnect{
-        position: absolute;
-        top: 30.8%;
-        left:52.5%;
-    }
-    #login{
-        justify-content: center;
-    }
-
-    input{
-        width:59%;
-        margin:0;
-    }
-    .admin{
-        flex-direction: column;
-    }
-    .article{
-        width: 98%;
-        margin: 2% 1%;
-    }
-    #commentaire{
-        width:90%;
-        height: 150px;
-        padding: 1%;
-    }
-
-    .membres{
-        width:98%;
-        margin: 0 1% 2% 1%;
-    }
-    .formentaire{
-        margin-top:15px;
+    legend{
+        font-size: 1rem;
     }
 
 }
@@ -672,34 +557,12 @@ button:hover{
 
 }
 
-@media screen  and (max-width: 426px)  {
+@media screen and (max-width: 1024px){
     h1{
-        font-size: 4rem;
+        font-size: 5rem;
     }
     #boutique{
-        height: 200px;
-    }
-    fieldset{
-        width:75%;
-        padding:0;
-    }
-    #disconnect{
-        position: absolute;
-        top: 30.8%;
-        left:52.5%;
-    }
-    input{
-        width:60%;
-        margin:2% 20%;
-
-    }
-    #infos{
-        display: flex;
-
-        width: 100%;
-    }
-    #contact,#livraison,#paiement,#customer,#retour{
-        width: 48%;
+        height:200px;
     }
     .part2{
         width:100%;
@@ -712,22 +575,167 @@ button:hover{
     .desc{
         width: 100%;
     }
+    fieldset{
+        width:80%;
+        padding:0;
+    }
+    #disconnect{
+        position: absolute;
+        top: 31.5%;
+        left:51.5%;
+    }
+    #login{
+        justify-content: center;
+    }
+    form{
+        justify-content: center;
+        width:100%;
+    }
+
+    input{
+        width:40%;
+        margin:0;
+        border: 1px solid black;
+    }
     .admin{
         flex-direction: column;
     }
     .article{
-        width: 95%;
+        width: 98%;
+        margin: 2% 1%;
     }
     #commentaire{
         width:90%;
         height: 150px;
-        padding-bottom: 3%;
+        padding: 1%;
+    }
+
+    .membres{
+        width:98%;
+        margin: 0 1% 2% 1%;
     }
     .formentaire{
         margin-top:15px;
     }
-    legend{
-        font-size: 1rem;
+
+}
+@media screen and (max-width: 1440px){
+    h1{
+        font-size: 5rem;
+    }
+    #boutique{
+        height:200px;
+    }
+    .part2{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width:50%;
+    }
+    .desc{
+        width: 100%;
+    }
+    fieldset{
+        width:75%;
+        padding:0;
+    }
+    #disconnect{
+        position: absolute;
+        top: 37.8%;
+        left:51%;
+    }
+    #login{
+        justify-content: center;
+    }
+    form{
+        justify-content: center;
+    }
+
+    input{
+        width:59%;
+        margin:0;
+    }
+    .admin{
+        flex-direction: column;
+    }
+    .article{
+        width: 98%;
+        margin: 2% 1%;
+    }
+    #commentaire{
+        width:90%;
+        height: 150px;
+        padding: 1%;
+    }
+
+    .membres{
+        width:98%;
+        margin: 0 1% 2% 1%;
+    }
+    .formentaire{
+        margin-top:15px;
     }
 
 }
+@media screen and (max-width: 2560px){
+    h1{
+        font-size: 5rem;
+    }
+    #boutique{
+        height:200px;
+    }
+    .part2{
+        width:100%;
+        display: flex;
+        flex-direction: column;
+    }
+    img{
+        width:50%;
+    }
+    .desc{
+        width: 100%;
+    }
+    fieldset{
+        width:75%;
+        padding:0;
+    }
+    #disconnect{
+        position: absolute;
+        top: 30.8%;
+        left:52.5%;
+    }
+    #login{
+        justify-content: center;
+    }
+
+    input{
+        width:59%;
+        margin:0;
+    }
+    .admin{
+        flex-direction: column;
+    }
+    .article{
+        width: 98%;
+        margin: 2% 1%;
+    }
+    #commentaire{
+        width:90%;
+        height: 150px;
+        padding: 1%;
+    }
+
+    .membres{
+        width:98%;
+        margin: 0 1% 2% 1%;
+    }
+    .formentaire{
+        margin-top:15px;
+    }
+
+}
+
+
+
