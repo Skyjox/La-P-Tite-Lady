@@ -35,7 +35,7 @@
     </div>
         <div id="allico">
             <ul id="icones">
-                <li><a href="./home.php"><i class="fa-solid fa-house"></i></a></li>
+                <li><a href="./index.php"><i class="fa-solid fa-house"></i></a></li>
              <div id="deco">
                 <li><a href="./view_login.php"><i class="fa-solid fa-user " @mouseover=" connect = true" @mouseleave="connect = false"></i></a></li>
                  <p id="disconnect" v-show="connect" >Connexion</p>

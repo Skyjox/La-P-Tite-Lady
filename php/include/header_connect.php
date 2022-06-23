@@ -36,7 +36,7 @@
     </div>
     <div id="allico">
         <ul id="icones">
-            <li><a href="./home.php"><i class="fa-solid fa-house"></i></a></li>
+            <li><a href="./index.php"><i class="fa-solid fa-house"></i></a></li>
             <div id="deco">
             <li><a id="cross"  href="./deconnect.php" @mouseover="disconnect = true" @mouseleave="disconnect = false" ><i class="fa-solid fa-circle-xmark"></i></a></li>
             <p id="disconnect" v-show="disconnect" >Déconnexion</p></div>
