@@ -38,7 +38,7 @@
                 <li><a href="./home.php"><i class="fa-solid fa-house"></i></a></li>
              <div id="deco">
                 <li><a href="./view_login.php"><i class="fa-solid fa-user " @mouseover=" connect = true" @mouseleave="connect = false"></i></a></li>
-                 <p id="disconnect" >Connexion</p>
+                 <p id="disconnect" v-show="connect" >Connexion</p>
              </div>
 
                 <li><a href="#"><i class="fa-solid fa-bag-shopping "></i></a></li>
